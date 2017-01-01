@@ -1,2 +1,14 @@
-baseurl: /blog
-encoding: UTF-8
+#markdown: rdiscount
+permalink: /:title/
+url: http://xiaofa307.github.com
+#highlighter: pygments
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 100
+paginate_path: "page:num"
+name: 小法
+description: ！
+author: xiaofa307
+email: xiaofa307@gmail.com
+safe: false
+about: ""

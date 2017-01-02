@@ -6,9 +6,9 @@
     <title>{% if page.path == 'index.html' %}{{ site.name }}{% else %}{% unless page.id %}{{ site.name }} - {% endunless %}{{ page.title }}{% endif %}</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
-    <link rel="stylesheet" href="/blog/media/css/style.css" />
-    <link rel="stylesheet" href="/blog/media/css/highlight.css" media="all"/>
-    <script type="text/javascript" src="/blog/media/js/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="/media/css/style.css" />
+    <link rel="stylesheet" href="/media/css/highlight.css" media="all"/>
+    <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,11 +27,11 @@
           <h1>{{ page.title }}</h1>
         </header>
         <nav>
-          <span><a title="首页" class="" href="/blog">首页</a></span>
-          <span><a title="分类" class="" href="/blog/categories/">分类</a></span>
-          <span><a title="标签" class="" href="/blog/tags/">标签</a></span>
-          <span><a title="留言" class="" href="/blog/guestbook/">留言</a></span>
-          <span><a title="关于" class="" href="/blog/about/">关于</a></span>
+          <span><a title="首页" class="" href="/">首页</a></span>
+          <span><a title="分类" class="" href="/categories/">分类</a></span>
+          <span><a title="标签" class="" href="/tags/">标签</a></span>
+          <span><a title="留言" class="" href="/guestbook/">留言</a></span>
+          <span><a title="关于" class="" href="/about/">关于</a></span>
         </nav>
         <article class="content">
           {{ content }}

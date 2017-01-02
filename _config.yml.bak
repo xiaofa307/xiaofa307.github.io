@@ -1,6 +1,6 @@
 #markdown: rdiscount
 permalink: /:title/
-url: http://xiaofa307.github.com/blog
+url: http://xiaofa307.github.com
 #highlighter: pygments
 highlighter: rouge
 gems: [jekyll-paginate]

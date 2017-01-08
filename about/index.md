@@ -6,12 +6,12 @@ comments: no
 
 ### 个人说明
 
-* 后台开发 读书 跑步 
+* 后台开发 天津
 
  
  
 
-### 欢迎交流
+### 欢迎交流(looking for a job)
 
  
 * 邮箱：[{{ site.email }}](mailto:{{ site.email }})

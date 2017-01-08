@@ -6,7 +6,7 @@ highlighter: rouge
 gems: [jekyll-paginate]
 paginate: 100
 paginate_path: "page:num"
-name: 小法
+name: 。
 description: ！
 author: xiaofa307
 email: g80you@gmail.com

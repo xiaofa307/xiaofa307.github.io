@@ -15,7 +15,7 @@ tags: ssh
 
 #### 解决过程
 
-	以铁友网data.99pto.com为例,项目里调用他的火车票查询接口。
+以铁友网data.99pto.com为例,项目里调用他的火车票查询接口。
 1. 在dmz上执行"nslookup data.99pto.com" 得到dmz配置的dns,及解析出来的ip。
 2. dmz机器开通该ip权限。
 3. 代码里调用data.99pto.com的地址变成访问dmz的地址。

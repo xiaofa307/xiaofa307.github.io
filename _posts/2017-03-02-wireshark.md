@@ -19,13 +19,11 @@ tags: ssh
 1. 在dmz上执行"nslookup data.99pto.com" 得到dmz配置的dns,及解析出来的ip。
 2. dmz机器开通该ip权限。
 3. 代码里调用data.99pto.com的地址变成访问dmz的地址。
-3. dmz上配置nginx代理到外网,报连接超时,查看nginx日志发现铁友网禁止通过ip的方式调用接口,只开通了域名调用的方式。
-'
-	location /train/ {
-			proxy_set_header Host $host:$server_port;
-      		proxy_pass http://data.99pto.com;
-      }
-'
+3. dmz上配置nginx代理到外网,报连接超时,查看nginx日志发现铁友网禁止通过ip的方式调用接口,只开通了域名调用的方式。  
+	location /train/ {  
+			proxy_set_header Host $host:$server_port;  
+      		proxy_pass http://data.99pto.com;  
+      }  
 4. wireshark对比了本地直接访问和nginx代理的http resquest,发现header一个是data.99pto.com,一个变成了localhost
 5. 去除nginx的proxy_set_header.
 

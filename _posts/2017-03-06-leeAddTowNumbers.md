@@ -16,7 +16,7 @@ Output: 7 -> 0 -> 8
 
 #### java
 
-```java
+<pre><code>
 
 	/**
 	 * Definition for singly-linked list.
@@ -48,5 +48,5 @@ Output: 7 -> 0 -> 8
 	    }
 	}
 
-```
+</code></pre>
 

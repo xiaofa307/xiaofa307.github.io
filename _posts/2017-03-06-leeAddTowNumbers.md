@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Add Two Numbers
-categories: leecode
+title: leecode-Add Two Numbers
+categories: 算法
 tags: leecode
 ---
 
-### LeeCode - #2 add two numbers
+### LeeCode - no.2 add two numbers
 
 ou are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 

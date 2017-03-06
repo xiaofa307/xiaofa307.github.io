@@ -17,34 +17,36 @@ Output: 7 -> 0 -> 8
 #### java
 
 ```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-public class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-         ListNode prev = new ListNode(0);
-    	ListNode result = prev;
-    	int next = 0;
-    	
-    	while(null != l1 || null != l2 || next>0){
-    		ListNode temp = new ListNode(0);
-    		int sum = (null == l1 ? 0 : l1.val )+ (null == l2 ? 0 : l2.val )+ next;
-    		temp.val = (sum)%10;
-    		next = (sum)/10;
-    		prev.next = temp;
-    		prev = temp;
-    		l1 = l1 == null ?  null : l1.next; 
-    		l2 = l2 == null ?  null : l2.next; 
-    		
-    	}
-    	return result.next;
-        
-    }
-}
+
+	/**
+	 * Definition for singly-linked list.
+	 * public class ListNode {
+	 *     int val;
+	 *     ListNode next;
+	 *     ListNode(int x) { val = x; }
+	 * }
+	 */
+	public class Solution {
+	    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+	         ListNode prev = new ListNode(0);
+	    	ListNode result = prev;
+	    	int next = 0;
+	    	
+	    	while(null != l1 || null != l2 || next>0){
+	    		ListNode temp = new ListNode(0);
+	    		int sum = (null == l1 ? 0 : l1.val )+ (null == l2 ? 0 : l2.val )+ next;
+	    		temp.val = (sum)%10;
+	    		next = (sum)/10;
+	    		prev.next = temp;
+	    		prev = temp;
+	    		l1 = l1 == null ?  null : l1.next; 
+	    		l2 = l2 == null ?  null : l2.next; 
+	    		
+	    	}
+	    	return result.next;
+	        
+	    }
+	}
+
 ```
 

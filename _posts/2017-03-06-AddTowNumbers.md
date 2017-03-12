@@ -1,8 +1,8 @@
 ---
 layout: post
-title: leecode-Add Two Numbers
+title: Add Two Numbers
 categories: 算法
-tags: python
+tags: leecode list
 ---
 
 ### no.2
